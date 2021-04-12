@@ -20,12 +20,7 @@ public class PaintApplication extends Application {
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("/paint_application.fxml"));
 
-        Scene scene = new Scene(root, 300, 275);
-        ColorPicker colorPicker = new ColorPicker();
-        colorPicker.setOnAction(e -> {
-            Color c = colorPicker.getValue();
-            System.out.println("New Color's RGB = "+c.getRed()+" "+c.getGreen()+" "+c.getBlue());
-        });
+        Scene scene = new Scene(root, 700, 300);
         stage.setTitle("Paint");
         stage.setScene(scene);
         stage.show();

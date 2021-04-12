@@ -12,9 +12,11 @@
             fx:controller="yahav.paint.PaintController"
             prefHeight="400.0" prefWidth="600.0">
 
-    <Canvas fx:id="canvas" width="600" height="400" />
+    <Canvas fx:id="canvas" width="700" height="300" />
     <HBox alignment="BASELINE_LEFT" spacing="10">
-          <ColorPicker fx:id="colorPicker" />
+          <ColorPicker fx:id="colorPicker" onMouseClicked="#Color"/>
+<!--            <Button text = "Color" onMouseClicked="#Color" fx:id="ColorButton"/>-->
+            <Button text = "Erase" onMouseClicked="#Erase" fx:id="EraseButton"/>
     </HBox>
 
 </AnchorPane>
