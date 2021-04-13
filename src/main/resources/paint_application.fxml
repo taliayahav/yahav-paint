@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-
 <?import javafx.scene.canvas.Canvas?>
+<?import yahav.paint.PaintController?>
+
 <AnchorPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="yahav.paint.PaintController"
@@ -14,9 +11,9 @@
 
     <Canvas fx:id="canvas" width="700" height="300" />
     <HBox alignment="BASELINE_LEFT" spacing="10">
-          <ColorPicker fx:id="colorPicker" onMouseClicked="#Color"/>
+          <ColorPicker fx:id="colorPicker" onMouseClicked="#color"/>
 <!--            <Button text = "Color" onMouseClicked="#Color" fx:id="ColorButton"/>-->
-            <Button text = "Erase" onMouseClicked="#Erase" fx:id="EraseButton"/>
+            <Button text = "Erase" onMouseClicked="#erase" fx:id="EraseButton"/>
     </HBox>
 
 </AnchorPane>
