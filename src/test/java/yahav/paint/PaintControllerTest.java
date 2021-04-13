@@ -6,7 +6,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import yahav.paint.PaintController;
 
-import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.*;
 
 public class PaintControllerTest {
     private Canvas canvas;
@@ -17,7 +17,9 @@ public class PaintControllerTest {
         //given
         controller = new PaintController();
         canvas = mock(Canvas.class);
+        controller.canvas = canvas;
         colorPicker = mock(ColorPicker.class);
+        controller.colorPicker = colorPicker;
     }
 
     @BeforeClass
@@ -30,6 +32,7 @@ public class PaintControllerTest {
         //given
         givenPaintController();
         MouseEvent mouseEvent =mock(MouseEvent.class);
+       // doNothing().when(
 
         //when
         controller.erase(mouseEvent);

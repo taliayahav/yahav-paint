@@ -8,9 +8,9 @@ import javafx.scene.input.MouseEvent;
 
 public class PaintController extends Canvas{
     @FXML
-    private Canvas  canvas;
+    protected Canvas  canvas;
     @FXML
-    private ColorPicker colorPicker;
+    protected ColorPicker colorPicker;
 //   private final GraphicsContext graphic = getGraphicsContext2D();
 
     public void erase(MouseEvent mouseEvent) {
