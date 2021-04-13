@@ -28,7 +28,7 @@ public class PaintControllerTest {
     }
 
     @Test
-    public void Erase(){
+    public void erase(){
         //given
         givenPaintController();
         MouseEvent mouseEvent =mock(MouseEvent.class);
@@ -40,7 +40,7 @@ public class PaintControllerTest {
         //then
     }
     @Test
-    public void Color(){
+    public void color(){
         //given
         givenPaintController();
         MouseEvent mouseEvent =mock(MouseEvent.class);

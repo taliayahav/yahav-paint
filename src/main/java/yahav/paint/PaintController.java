@@ -14,9 +14,9 @@ public class PaintController extends Canvas{
 //   private final GraphicsContext graphic = getGraphicsContext2D();
 
     public void erase(MouseEvent mouseEvent) {
-        GraphicsContext graphic = getGraphicsContext2D();
+        GraphicsContext graphic = canvas.getGraphicsContext2D();
         canvas.setOnMouseDragged(event -> {
-            graphic.clearRect(event.getX(), event.getY(), 15,15);
+            graphic.clearRect(event.getX(), event.getY(),15,15);
         });
     }
 
